@@ -1,0 +1,25 @@
+.sidebarButton-container {
+    color: #fff;
+    width: 100%;
+    padding: 8%;
+    font-weight: 700;
+    font-size: 22px;
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    border-left: 10px solid #00C2CB;
+    padding-left: 9%;
+}
+
+.sidebarButton-container:hover{
+    color: #00C2CB;
+    transform: scale(1.1);
+}
+
+.sidebarButton {
+    width: 100%;
+    text-align: left;
+}

@@ -1,0 +1,56 @@
+.sidebar-container {
+    background: #242424;
+    height: 100%;
+    width: 15%;
+    border-radius: 20px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-container .logo-image {
+    width: 90%;
+    padding-top: 10%;
+}
+
+.sidebar-buttons {
+    flex-direction: column;
+    justify-content: center;
+    /* height: 70%; */
+}
+
+.account {
+    height: 10%;
+    background: #343434;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.account-img, .account-img img {
+    width: 45px;
+    height: 90%;
+}
+
+
+.account-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.account-btns {
+    position: absolute;
+    right: -50px;
+    top: -20px;
+    width: 100px;
+    height: 40px;
+    background: #000;
+}
+
+.signout-btn {
+    width: 100%;
+    text-align: center;
+}
