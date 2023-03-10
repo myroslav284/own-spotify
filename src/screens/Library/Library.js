@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Loader from "../../components/Loader/Loader";
 import apiClient from "../../spotify";
 import "./Library.css";
 
@@ -11,7 +12,7 @@ export default function Library() {
       console.log(playlists);
     });
   }, []);
-  return (
+  return playlists ?  (
     <div className="library">
       {playlists?.map((playlist) => (
         <div className="playlists">
@@ -19,5 +20,5 @@ export default function Library() {
         </div>
       ))}
     </div>
-  );
+  ): <Loader />;
 }
