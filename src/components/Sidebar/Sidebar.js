@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Sidebar.css';
+import './Sidebar.scss';
 import SidebarButton from './SidebarButton/SidebarButton';
 import {AiOutlineHome, AiOutlineSearch} from 'react-icons/ai';
 import {FaSearch} from 'react-icons/fa';
