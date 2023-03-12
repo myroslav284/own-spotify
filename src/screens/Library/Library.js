@@ -15,13 +15,13 @@ export default function Library() {
     });
   }, []);
   const navigate = useNavigate();
-  const playPlaylist = (id) =>{
-    navigate("/playlist", {state: {id: id}})
+  const playPlaylist = (id, img) =>{
+    navigate("/playlist", {state: {id: id, img: img}})
   }
   return playlists ? (
     <div className="library flex">
       {playlists?.map((playlist) => (
-        <div key={playlist.id} className="playlist" onClick={() => playPlaylist(playlist.id)}>
+        <div key={playlist.id} className="playlist" onClick={() => playPlaylist(playlist.id, playlist?.images[0]?.url)}>
           <div className="playlist-img">
             <img src={playlist?.images[0]?.url} />
           </div>

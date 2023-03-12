@@ -1,0 +1,19 @@
+.player {
+  height: 100vh;
+
+  &-banner {
+    height: 50%;
+
+
+  }
+}
+
+.banner-img {
+    width: 30%;
+    display: grid;
+    place-items: center;
+
+    & img {
+        width:80%;
+    }
+}

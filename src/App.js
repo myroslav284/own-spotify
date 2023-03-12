@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { setClientToken } from './spotify';
 import Login from './screens/auth/Login';
 import Library from './screens/Library/Library';
+import Playlist from './screens/Playlist/Playlist';
 function App() {
   const [token, setToken] = useState("");
   useEffect(()=>{
@@ -30,7 +31,7 @@ function App() {
           <Route path='/' element/>
           <Route path='/search' element/>
           <Route path='/fav' element/>
-          <Route path='/playlist' element/>
+          <Route path='/playlist' element={<Playlist />}/>
           <Route path='/fav' element/>
           <Route path='/library' element={<Library />}/>
         </Routes>
